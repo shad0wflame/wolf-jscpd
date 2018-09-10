@@ -49,7 +49,6 @@ class WolfJSCPD extends WolfLinter {
     }
 
     track() {
-
         const result = new jscpd().run(this.options);
         result.report.duplicates.map(_private.get(this)._processDupeCheckResults)
                                 .forEach((dupeErr) => this.addErrors(dupeErr));
