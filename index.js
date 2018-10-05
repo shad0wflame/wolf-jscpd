@@ -20,7 +20,7 @@ class WolfJSCPD extends WolfLinter {
         super();
 
         this.options = {
-            path: rootPath,
+            path: testPath,
             files: '**/*.ts',
             exclude: ['**/node_modules/**'],
             reporter: 'json',
